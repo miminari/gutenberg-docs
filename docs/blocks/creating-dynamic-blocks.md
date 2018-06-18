@@ -1,5 +1,5 @@
 <!-- # Creating dynamic blocks -->
-# 動的ブロックを作る
+# 動的ブロックを作成する
 
 <!-- It is possible to create dynamic blocks. These are blocks that can change their content even if the post is not saved. One example from WordPress itself is the latest posts block. This block will update everywhere it is used when a new post is published. -->
 動的ブロックを作成することは可能です。 投稿が保存されていなくてもコンテンツを変更できるブロックです。 WordPress 自体の一例は、最新の投稿ブロックです。このブロックは、新しい投稿が公開されたときに、どこ使われていても更新されます。
@@ -125,9 +125,11 @@ register_block_type( 'my-plugin/latest-post', array(
 * 保存機能は null を返すだけです、なぜならそのレンダリングはサーバーサイドで行われているからです。
 * サーバーサイドのレンダリングはブロックの属性を引数とし、（ショートコードと良く似た）マークアップを返す機能です。
 
-## Live rendering in Gutenberg editor
+<!-- ## Live rendering in Gutenberg editor -->
+## Gutenberg エディタにおけるライブレンダリング
 
-Gutenberg 2.8 added the [`<ServerSideRender>`](https://github.com/WordPress/gutenberg/tree/master/components/server-side-render) block which enables all the rendering to take place on the server using PHP rather than in JavaScript. Server-side render is meant as a fallback; client-side rendering in JavaScript is the preferred implementation. 
+<!-- Gutenberg 2.8 added the [`<ServerSideRender>`](https://github.com/WordPress/gutenberg/tree/master/components/server-side-render) block which enables all the rendering to take place on the server using PHP rather than in JavaScript. Server-side render is meant as a fallback; client-side rendering in JavaScript is the preferred implementation. -->
+Gutenberg ２．８ で[`<ServerSideRender>`](https://github.com/WordPress/gutenberg/tree/master/components/server-side-render)ブロックが追加されました、 JavaScript ではなく PHP を使用してすべてのレンダリングがサーバー上で行われるようになっています。 サーバーサイドレンダリングはフォールバックを意味します。JavaScript でのクライアント側のレンダリングが望ましい実装です。
 
 {% codetabs %}
 {% ES5 %}
@@ -189,4 +191,5 @@ registerBlockType( 'my-plugin/latest-post', {
 ```
 {% end %}
 
-The PHP code is the same as above and is automatically handled through the WP REST API.
+<!-- The PHP code is the same as above and is automatically handled through the WP REST API. -->
+PHP コードは上記と同じで、WP REST API によって自動的に処理されます。
