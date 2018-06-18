@@ -121,7 +121,7 @@ register_block_type( 'my-plugin/latest-post', array(
 <!-- * The edit function still shows a representation of the block in the editor's context (this could be very different from the rendered version, it's up to the block's author)
 * The save function just returns null because the rendering is performed server-side.
 * The server-side rendering is a function taking the block attributes as an argument and returning the markup (quite similar to shortcodes) -->
-* 編集機能は、エディタの context でブロックの representation を表示します（これは、レンダリングされたバージョンとは大きく異なる可能性があります、ブロックの作成者までです）
+* The edit function still shows a representation of the block in the editor's context (this could be very different from the rendered version, it's up to the block's author)
 * 保存機能は null を返すだけです、なぜならそのレンダリングはサーバーサイドで行われているからです。
 * サーバーサイドのレンダリングはブロックの属性を引数とし、（ショートコードと良く似た）マークアップを返す機能です。
 
