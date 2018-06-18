@@ -87,7 +87,7 @@ registerBlockType( 'my-plugin/latest-post', {
 {% end %}
 
 <!-- Because it is a dynamic block it also needs a server component. The rendering can be added using the `render_callback` property when using the `register_block_type` function. -->
-これは動的ブロックであるため、サーバーコンポーネントも必要です。 そのレンダリングは `register_block_type`関数の仕様時に` render_callback`プロパティを使って追加することができます。
+これは動的ブロックであるため、サーバーコンポーネントも必要です。 そのレンダリングは `register_block_type`関数の使用時に` render_callback`プロパティを使って追加することができます。
 
 ```php
 <?php
