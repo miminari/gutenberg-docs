@@ -1,8 +1,11 @@
-# Creating dynamic blocks
+<!-- # Creating dynamic blocks -->
+#動的ブロックを作る
 
-It is possible to create dynamic blocks. These are blocks that can change their content even if the post is not saved. One example from WordPress itself is the latest posts block. This block will update everywhere it is used when a new post is published.
+<!-- It is possible to create dynamic blocks. These are blocks that can change their content even if the post is not saved. One example from WordPress itself is the latest posts block. This block will update everywhere it is used when a new post is published. -->
+動的ブロックを作成することは可能です。 投稿が保存されていなくてもコンテンツを変更できるブロックです。 WordPress 自体の一例は、最新の投稿ブロックです。このブロックは、新しい投稿が公開されたときに、どこ使われていても更新されます。
 
-The following code example shows how to create the latest post block dynamic block.
+<!-- The following code example shows how to create the latest post block dynamic block. -->
+次のコード例は、最新の投稿ブロック動的ブロックを作成する方法を示します。
 
 {% codetabs %}
 {% ES5 %}
@@ -83,7 +86,8 @@ registerBlockType( 'my-plugin/latest-post', {
 ```
 {% end %}
 
-Because it is a dynamic block it also needs a server component. The rendering can be added using the `render_callback` property when using the `register_block_type` function.
+<!-- Because it is a dynamic block it also needs a server component. The rendering can be added using the `render_callback` property when using the `register_block_type` function. -->
+これは動的ブロックであるため、サーバーコンポーネントも必要です。 そのレンダリングは `register_block_type`関数の仕様時に` render_callback`プロパティを使って追加することができます。
 
 ```php
 <?php
@@ -111,11 +115,15 @@ register_block_type( 'my-plugin/latest-post', array(
 ) );
 ```
 
-There are a few things to notice:
+<!-- There are a few things to notice: -->
+気づくべきことがいくつかあります:
 
-* The edit function still shows a representation of the block in the editor's context (this could be very different from the rendered version, it's up to the block's author)
+<!-- * The edit function still shows a representation of the block in the editor's context (this could be very different from the rendered version, it's up to the block's author)
 * The save function just returns null because the rendering is performed server-side.
-* The server-side rendering is a function taking the block attributes as an argument and returning the markup (quite similar to shortcodes)
+* The server-side rendering is a function taking the block attributes as an argument and returning the markup (quite similar to shortcodes) -->
+* 編集機能は、エディタの context でブロックの representation を表示します（これは、レンダリングされたバージョンとは大きく異なる可能性があります、ブロックの作成者までです）
+* 保存機能は null を返すだけです、なぜならそのレンダリングはサーバーサイドで行われているからです。
+* サーバーサイドのレンダリングはブロックの属性を引数とし、（ショートコードと良く似た）マークアップを返す機能です。
 
 ## Live rendering in Gutenberg editor
 
