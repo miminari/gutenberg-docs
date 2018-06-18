@@ -129,7 +129,7 @@ register_block_type( 'my-plugin/latest-post', array(
 ## Gutenberg エディタにおけるライブレンダリング
 
 <!-- Gutenberg 2.8 added the [`<ServerSideRender>`](https://github.com/WordPress/gutenberg/tree/master/components/server-side-render) block which enables all the rendering to take place on the server using PHP rather than in JavaScript. Server-side render is meant as a fallback; client-side rendering in JavaScript is the preferred implementation. -->
-Gutenberg ２．８ で[`<ServerSideRender>`](https://github.com/WordPress/gutenberg/tree/master/components/server-side-render)ブロックが追加されました、 JavaScript ではなく PHP を使用してすべてのレンダリングがサーバー上で行われるようになっています。 サーバーサイドレンダリングはフォールバックを意味します。JavaScript でのクライアント側のレンダリングが望ましい実装です。
+Gutenberg 2.8 で[`<ServerSideRender>`](https://github.com/WordPress/gutenberg/tree/master/components/server-side-render)ブロックが追加されました、 JavaScript ではなく PHP を使用してすべてのレンダリングがサーバー上で行われるようになっています。 サーバーサイドレンダリングはフォールバックを意味します。JavaScript でのクライアント側のレンダリングが望ましい実装です。
 
 {% codetabs %}
 {% ES5 %}
