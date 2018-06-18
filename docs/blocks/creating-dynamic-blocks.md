@@ -1,5 +1,5 @@
 <!-- # Creating dynamic blocks -->
-#動的ブロックを作る
+# 動的ブロックを作る
 
 <!-- It is possible to create dynamic blocks. These are blocks that can change their content even if the post is not saved. One example from WordPress itself is the latest posts block. This block will update everywhere it is used when a new post is published. -->
 動的ブロックを作成することは可能です。 投稿が保存されていなくてもコンテンツを変更できるブロックです。 WordPress 自体の一例は、最新の投稿ブロックです。このブロックは、新しい投稿が公開されたときに、どこ使われていても更新されます。
